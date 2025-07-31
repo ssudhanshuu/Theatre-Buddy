@@ -10,9 +10,8 @@ export default function Movies() {
     <>
     <HeroSection/>
      <FeaturedSection2/>
-
     < MovieDetails/>
-    <Footer/>
+   
     </>
   )
 }

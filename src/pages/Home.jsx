@@ -20,7 +20,7 @@ function Home() {
       <Explore />
       <FeaturedSection />
       <TrailersSection />
-      <Footer />
+     
     </>
   );
 }

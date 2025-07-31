@@ -111,7 +111,7 @@ export default function FullDetails() {
         ))}
       </div>
 
-      <Footer />
+   
     </div>
   );
 }
