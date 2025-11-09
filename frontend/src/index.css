@@ -21,6 +21,7 @@ body{
     color: white;
     background-color: #16161b;
 }
+<<<<<<< HEAD
 .bg-primary {
    background-color: #f59e0b;
 }
@@ -28,3 +29,8 @@ body{
 .marginPy{
   margin-top: 100px !important;
 }
+=======
+.bg-primary{
+   background-color:#f59e0b, 
+}
+>>>>>>> e9b758d14a48b25a33e2de7fd487c8e6468c4804

@@ -15,7 +15,11 @@ export default function ContactUs() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Form submitted:', formData);
+<<<<<<< HEAD
     // Send to backend or Show success message here
+=======
+    // Send to backend or show success message here
+>>>>>>> e9b758d14a48b25a33e2de7fd487c8e6468c4804
   };
 
   return (
@@ -68,7 +72,10 @@ export default function ContactUs() {
           Send Message
         </button>
       </form>
+<<<<<<< HEAD
       <footer></footer>
+=======
+>>>>>>> e9b758d14a48b25a33e2de7fd487c8e6468c4804
     </div>
   );
 }

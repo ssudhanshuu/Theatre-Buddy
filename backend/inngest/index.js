@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 import { Inngest } from "inngest";
 import UserActivation from "../models/UserActivation"; // ensure `.js` is added in ESM
+=======
+const { Inngest } = require("inngest");
+const UserActivation = require("../models/UserActivation");
+>>>>>>> e9b758d14a48b25a33e2de7fd487c8e6468c4804
 
 const inngest = new Inngest({ id: "movie-ticket-booking" });
 
@@ -49,8 +54,12 @@ const syncUserDelete = inngest.createFunction(
   }
 );
 
+<<<<<<< HEAD
 // ✅ Use ESM export
 export {
+=======
+module.exports = {
+>>>>>>> e9b758d14a48b25a33e2de7fd487c8e6468c4804
   inngest,
   syncUserCreation,
   syncUserUpdate,

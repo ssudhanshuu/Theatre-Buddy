@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useEffect } from "react";
 import { toast } from "react-hot-toast";
 import { Routes, Route, useLocation } from "react-router-dom";
@@ -34,10 +35,33 @@ import ListUpcomingMovies from "./pages/ListUpcomingMovies";
 import "./app.css";
 import SuccessPage from "./pages/SuccessPage";
 import FailurePage from "./pages/failurePage";
+=======
+import React, { useEffect } from 'react';
+import { Routes, Route, useLocation, Navigate } from 'react-router-dom';
+import { useUser } from '@clerk/clerk-react';
+import Navbar from './component/Navbar';
+import Footer from './component/Footer';
+import Home from './pages/Home';
+import Movies from './pages/Movies';
+import Favorite from './pages/Favorite';
+import MovieDetails from './pages/MovieDetails';
+import MyBooking from './pages/MyBooking';
+import SeatLayout from './pages/SeatLayout';
+import ContactUs from './pages/ContactUs';
+import FullDetails from './pages/FullDetails';
+import { Toaster, toast } from 'react-hot-toast';
+import './app.css';
+import AdminSidebar from './pages/admin/AdminSidebar';
+import Dashbord from './pages/admin/Dashbord'
+import Addshow from './pages/admin/Addshow';
+import ListShow from './pages/admin/ListShow';
+import ListBookings from './pages/admin/ListBookings';
+>>>>>>> e9b758d14a48b25a33e2de7fd487c8e6468c4804
 
 export default function App() {
   const location = useLocation();
   const { user } = useUser();
+<<<<<<< HEAD
   const isAdminRoute = location.pathname.startsWith("/admin");
 
   const isLoggedIn = !!user;
@@ -50,6 +74,19 @@ export default function App() {
 
     if (!isLoggedIn && !isPublic) {
       toast.error("Please login to your account", { id: "auth-warning" });
+=======
+
+  const isLoggedIn = !!user;
+  // const userRole = user?.publicMetadata?.role || 'user';
+  const isAdminRoute = location.pathname.startsWith('/admin');
+
+ 
+  useEffect(() => {
+    const publicPaths = ['/', '/movies', '/contactus', '/movies/:id'];
+    const isPublic = publicPaths.some(path => location.pathname.startsWith(path));
+    if (!isLoggedIn && !isPublic) {
+      toast.error("Please login to your account", { id: 'auth-warning' });
+>>>>>>> e9b758d14a48b25a33e2de7fd487c8e6468c4804
     }
   }, [isLoggedIn, location.pathname]);
 
@@ -59,6 +96,7 @@ export default function App() {
       {!isAdminRoute && <Navbar />}
 
       <Routes>
+<<<<<<< HEAD
         {/* Clerk Auth Routes */}
         <Route
           path="/sign-in/*"
@@ -70,10 +108,14 @@ export default function App() {
         />
 
         {/* Public Routes */}
+=======
+       
+>>>>>>> e9b758d14a48b25a33e2de7fd487c8e6468c4804
         <Route path="/" element={<Home />} />
         <Route path="/movies" element={<Movies />} />
         <Route path="/movies/:id" element={<FullDetails />} />
         <Route path="/contactus" element={<ContactUs />} />
+<<<<<<< HEAD
         <Route path="/payment-success" element={<SuccessPage></SuccessPage>}/>
         <Route path="/payment-failure" element={<FailurePage/>}/>
          
@@ -108,6 +150,36 @@ export default function App() {
       </Routes>
 
      
+=======
+
+        {isLoggedIn && (
+          <>
+            <Route path="/movies/:id/:date" element={<SeatLayout />} />
+            <Route path="/favorite" element={<Favorite />} />
+            <Route path="/moviedetails" element={<MovieDetails />} />
+            <Route path="/mybooking" element={<MyBooking />} />
+          </>
+        )}
+
+       
+
+          <>
+             <Route path="/admin" element={<AdminSidebar/>} />
+             <Route path="/admin/dashboard" element={<Dashbord/>} />
+         <Route path="/admin/add-show" element={<Addshow/>} />
+        <Route path="/admin/list-show" element={<ListShow/>} />
+         <Route path="/admin/list-bookings" element={<ListBookings/>} />
+       
+           
+           
+          </>
+      
+
+        <Route path="*" element={<div className="text-center p-10 text-xl">404 - Page Not Found</div>} />
+      </Routes>
+
+      {!isAdminRoute && <Footer />}
+>>>>>>> e9b758d14a48b25a33e2de7fd487c8e6468c4804
     </div>
   );
 }

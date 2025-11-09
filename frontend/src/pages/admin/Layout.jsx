@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // frontend/src/pages/admin/Layout.jsx
 import React from "react";
 import { Outlet } from "react-router-dom";
@@ -18,3 +19,12 @@ const Layout = () => {
 };
 
 export default Layout;
+=======
+import React from 'react'
+
+export default function  () {
+  return (
+    <div> </div>
+  )
+}
+>>>>>>> e9b758d14a48b25a33e2de7fd487c8e6468c4804

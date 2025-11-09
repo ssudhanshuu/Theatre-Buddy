@@ -54,7 +54,11 @@ const dummyCastsData = [
     { "name": "Tomasz Cymerman", "profile_path": "https://image.tmdb.org/t/p/original/nTSPtzWu6deZTJtWXHUpACVznY4.jpg", }
 ]
 
+<<<<<<< HEAD
 export const dummyShowData = [
+=======
+export const dummyShowsData = [
+>>>>>>> e9b758d14a48b25a33e2de7fd487c8e6468c4804
     {
         "_id": "324544",
         "id": 324544,
@@ -199,6 +203,7 @@ export const dummyShowData = [
 
 export const dummyDateTimeData = {
     "2025-07-24": [
+<<<<<<< HEAD
         { "time": "2025-07-24T01:00:00.000Z", "ShowId": "68395b407f6329be2bb45bd1" },
         { "time": "2025-07-24T03:00:00.000Z", "ShowId": "68395b407f6329be2bb45bd2" },
         { "time": "2025-07-24T05:00:00.000Z", "ShowId": "68395b407f6329be2bb45bd3" }
@@ -217,6 +222,26 @@ export const dummyDateTimeData = {
         { "time": "2025-07-27T01:00:00.000Z", "ShowId": "68395b407f6329be2bb45bda" },
         { "time": "2025-07-27T03:00:00.000Z", "ShowId": "68395b407f6329be2bb45bdb" },
         { "time": "2025-07-27T05:00:00.000Z", "ShowId": "68395b407f6329be2bb45bdc" }
+=======
+        { "time": "2025-07-24T01:00:00.000Z", "showId": "68395b407f6329be2bb45bd1" },
+        { "time": "2025-07-24T03:00:00.000Z", "showId": "68395b407f6329be2bb45bd2" },
+        { "time": "2025-07-24T05:00:00.000Z", "showId": "68395b407f6329be2bb45bd3" }
+    ],
+    "2025-07-25": [
+        { "time": "2025-07-25T01:00:00.000Z", "showId": "68395b407f6329be2bb45bd4" },
+        { "time": "2025-07-25T03:00:00.000Z", "showId": "68395b407f6329be2bb45bd5" },
+        { "time": "2025-07-25T05:00:00.000Z", "showId": "68395b407f6329be2bb45bd6" }
+    ],
+    "2025-07-26": [
+        { "time": "2025-07-26T01:00:00.000Z", "showId": "68395b407f6329be2bb45bd7" },
+        { "time": "2025-07-26T03:00:00.000Z", "showId": "68395b407f6329be2bb45bd8" },
+        { "time": "2025-07-26T05:00:00.000Z", "showId": "68395b407f6329be2bb45bd9" }
+    ],
+    "2025-07-27": [
+        { "time": "2025-07-27T01:00:00.000Z", "showId": "68395b407f6329be2bb45bda" },
+        { "time": "2025-07-27T03:00:00.000Z", "showId": "68395b407f6329be2bb45bdb" },
+        { "time": "2025-07-27T05:00:00.000Z", "showId": "68395b407f6329be2bb45bdc" }
+>>>>>>> e9b758d14a48b25a33e2de7fd487c8e6468c4804
     ]
 }
 
@@ -224,12 +249,21 @@ export const dummyDashboardData = {
     "totalBookings": 14,
     "totalRevenue": 1517,
     "totalUser": 5,
+<<<<<<< HEAD
     "activeShow": [
         {
             "_id": "68352363e96d99513e4221a4",
             "movie": dummyShowData[0],
             "ShowDateTime": "2025-06-30T02:30:00.000Z",
             "ShowPrice": 59,
+=======
+    "activeShows": [
+        {
+            "_id": "68352363e96d99513e4221a4",
+            "movie": dummyShowsData[0],
+            "showDateTime": "2025-06-30T02:30:00.000Z",
+            "showPrice": 59,
+>>>>>>> e9b758d14a48b25a33e2de7fd487c8e6468c4804
             "occupiedSeats": {
                 "A1": "user_2xO4XPCgWWwWq9EHuQxc5UWqIok",
                 "B1": "user_2xO4XPCgWWwWq9EHuQxc5UWqIok",
@@ -238,23 +272,41 @@ export const dummyDashboardData = {
         },
         {
             "_id": "6835238fe96d99513e4221a8",
+<<<<<<< HEAD
             "movie": dummyShowData[1],
             "ShowDateTime": "2025-06-30T15:30:00.000Z",
             "ShowPrice": 81,
+=======
+            "movie": dummyShowsData[1],
+            "showDateTime": "2025-06-30T15:30:00.000Z",
+            "showPrice": 81,
+>>>>>>> e9b758d14a48b25a33e2de7fd487c8e6468c4804
             "occupiedSeats": {},
         },
         {
             "_id": "6835238fe96d99513e4221a9",
+<<<<<<< HEAD
             "movie": dummyShowData[2],
             "ShowDateTime": "2025-06-30T03:30:00.000Z",
             "ShowPrice": 81,
+=======
+            "movie": dummyShowsData[2],
+            "showDateTime": "2025-06-30T03:30:00.000Z",
+            "showPrice": 81,
+>>>>>>> e9b758d14a48b25a33e2de7fd487c8e6468c4804
             "occupiedSeats": {},
         },
         {
             "_id": "6835238fe96d99513e4221aa",
+<<<<<<< HEAD
             "movie": dummyShowData[3],
             "ShowDateTime": "2025-07-15T16:30:00.000Z",
             "ShowPrice": 81,
+=======
+            "movie": dummyShowsData[3],
+            "showDateTime": "2025-07-15T16:30:00.000Z",
+            "showPrice": 81,
+>>>>>>> e9b758d14a48b25a33e2de7fd487c8e6468c4804
             "occupiedSeats": {
                 "A1": "user_2xO4XPCgWWwWq9EHuQxc5UWqIok",
                 "A2": "user_2xO4XPCgWWwWq9EHuQxc5UWqIok",
@@ -264,9 +316,15 @@ export const dummyDashboardData = {
         },
         {
             "_id": "683682072b5989c29fc6dc0d",
+<<<<<<< HEAD
             "movie": dummyShowData[4],
             "ShowDateTime": "2025-06-05T15:30:00.000Z",
             "ShowPrice": 49,
+=======
+            "movie": dummyShowsData[4],
+            "showDateTime": "2025-06-05T15:30:00.000Z",
+            "showPrice": 49,
+>>>>>>> e9b758d14a48b25a33e2de7fd487c8e6468c4804
             "occupiedSeats": {
                 "A1": "user_2xO4XPCgWWwWq9EHuQxc5UWqIok",
                 "A2": "user_2xO4XPCgWWwWq9EHuQxc5UWqIok",
@@ -279,9 +337,15 @@ export const dummyDashboardData = {
         },
         {
             "_id": "68380044686d454f2116b39a",
+<<<<<<< HEAD
             "movie": dummyShowData[5],
             "ShowDateTime": "2025-06-20T16:00:00.000Z",
             "ShowPrice": 79,
+=======
+            "movie": dummyShowsData[5],
+            "showDateTime": "2025-06-20T16:00:00.000Z",
+            "showPrice": 79,
+>>>>>>> e9b758d14a48b25a33e2de7fd487c8e6468c4804
             "occupiedSeats": {
                 "A1": "user_2xl7eCSUHddibk5lRxfOtw9RMwX",
                 "A2": "user_2xl7eCSUHddibk5lRxfOtw9RMwX"
@@ -295,11 +359,19 @@ export const dummyBookingData = [
     {
         "_id": "68396334fb83252d82e17295",
         "user": { "name": "GreatStack", },
+<<<<<<< HEAD
         "Show": {
             _id: "68352363e96d99513e4221a4",
             movie: dummyShowData[0],
             ShowDateTime: "2025-06-30T02:30:00.000Z",
             ShowPrice: 59,
+=======
+        "show": {
+            _id: "68352363e96d99513e4221a4",
+            movie: dummyShowsData[0],
+            showDateTime: "2025-06-30T02:30:00.000Z",
+            showPrice: 59,
+>>>>>>> e9b758d14a48b25a33e2de7fd487c8e6468c4804
         },
         "amount": 98,
         "bookedSeats": ["D1", "D2"],
@@ -308,11 +380,19 @@ export const dummyBookingData = [
     {
         "_id": "68396334fb83252d82e17295",
         "user": { "name": "GreatStack", },
+<<<<<<< HEAD
         "Show": {
             _id: "68352363e96d99513e4221a4",
             movie: dummyShowData[0],
             ShowDateTime: "2025-06-30T02:30:00.000Z",
             ShowPrice: 59,
+=======
+        "show": {
+            _id: "68352363e96d99513e4221a4",
+            movie: dummyShowsData[0],
+            showDateTime: "2025-06-30T02:30:00.000Z",
+            showPrice: 59,
+>>>>>>> e9b758d14a48b25a33e2de7fd487c8e6468c4804
         },
         "amount": 49,
         "bookedSeats": ["A1"],
@@ -321,11 +401,19 @@ export const dummyBookingData = [
     {
         "_id": "68396334fb83252d82e17295",
         "user": { "name": "GreatStack", },
+<<<<<<< HEAD
         "Show": {
             _id: "68352363e96d99513e4221a4",
             movie: dummyShowData[0],
             ShowDateTime: "2025-06-30T02:30:00.000Z",
             ShowPrice: 59,
+=======
+        "show": {
+            _id: "68352363e96d99513e4221a4",
+            movie: dummyShowsData[0],
+            showDateTime: "2025-06-30T02:30:00.000Z",
+            showPrice: 59,
+>>>>>>> e9b758d14a48b25a33e2de7fd487c8e6468c4804
         },
         "amount": 147,
         "bookedSeats": ["A1", "A2","A3"],

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useEffect, useState } from "react";
 import axios from "axios";
 
@@ -114,3 +115,16 @@ export default function ListBookings() {
     </div>
   );
 }
+=======
+import React from 'react';
+import AdminSidebar from './AdminSidebar';
+
+export default function ListBookings() {
+  return (
+    <div className=" flex h-screen">
+      <AdminSidebar />
+      <div className="p-4 ml-20 w-[100%] ">List Bookings</div>
+    </div>
+  );
+}
+>>>>>>> e9b758d14a48b25a33e2de7fd487c8e6468c4804

@@ -11,7 +11,11 @@ export default function Movies() {
     <HeroSection/>
      <FeaturedSection2/>
     < MovieDetails/>
+<<<<<<< HEAD
    <footer></footer>
+=======
+   
+>>>>>>> e9b758d14a48b25a33e2de7fd487c8e6468c4804
     </>
   )
 }

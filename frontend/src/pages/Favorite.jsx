@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Favorite.jsx
 import React, { useEffect, useState } from "react";
 import { useAuth } from "@clerk/clerk-react";
@@ -47,3 +48,14 @@ export default function Favorite() {
     </div>
   );
 }
+=======
+import React from 'react'
+
+function Favorite() {
+  return (
+    <div>Favorite</div>
+  )
+}
+
+export default Favorite
+>>>>>>> e9b758d14a48b25a33e2de7fd487c8e6468c4804

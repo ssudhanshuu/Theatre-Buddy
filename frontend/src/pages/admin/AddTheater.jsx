@@ -20,7 +20,7 @@ function AddTheater() {
       }
 
       await axios.post(
-        `${API_URL}/api/admin/theaters/create`,
+    git merge origin/main --allow-unrelated-histories    `${API_URL}/api/admin/theaters/create`,
         { name, location, totalSeats },
         {
           headers: {

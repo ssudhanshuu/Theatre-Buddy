@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // backend/server.js
 const express = require('express');
 const dotenv = require('dotenv');
@@ -18,10 +19,20 @@ const theaterRoutes = require("./routers/theaterRoutes");
 const router = require('./routers/paymentRoutes');
 dotenv.config();
 connectDB();
+=======
+const express = require('express');
+require('dotenv/config');
+const connectDB = require('./config/db');
+const { clerkMiddleware } = require('@clerk/express');
+
+const { serve } = require("inngest/express");
+const { inngest, syncUserCreation } = require("./inngest");
+>>>>>>> e9b758d14a48b25a33e2de7fd487c8e6468c4804
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+<<<<<<< HEAD
 const allowedOrigin = "http://localhost:5173";
 
 app.use(cors({
@@ -56,3 +67,16 @@ app.get('/', (req, res) => {
 app.listen(PORT, () => {
   console.log(`✅ Server is running on http://localhost:${PORT}`);
 });
+=======
+app.use(express.json());
+connectDB();
+app.use(clerkMiddleware());
+
+app.get('/', (req, res) => {
+  res.send("This is from server");
+});
+
+app.use('/api/inngest', serve({ client: inngest, functions: [syncUserCreation] }));
+
+app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
+>>>>>>> e9b758d14a48b25a33e2de7fd487c8e6468c4804

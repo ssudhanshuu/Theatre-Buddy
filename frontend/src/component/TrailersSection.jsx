@@ -5,7 +5,10 @@ import BlurCircle from "./BlurCircle";
 import { PlayCircleIcon } from "lucide-react";
 
 export default function TrailersSection() {
+<<<<<<< HEAD
   // Initialize `currentTrailer` with the first trailer in dummyTrailers
+=======
+>>>>>>> e9b758d14a48b25a33e2de7fd487c8e6468c4804
   const [currentTrailer, setCurrentTrailer] = useState(dummyTrailers[0]);
   const [isLoading, setIsLoading] = useState(true);
   const videoRef = useRef(null);
@@ -36,6 +39,7 @@ export default function TrailersSection() {
       >
         <BlurCircle top="-100px" right="-100px" />
         {isLoading && (
+<<<<<<< HEAD
           <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-60 z-10 text-white text-lg">
             Loading trailer...
           </div>
@@ -55,6 +59,27 @@ export default function TrailersSection() {
 
       {/* === Trailer Thumbnails === */}
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mt-8 max-w-3xl mx-auto">
+=======
+          <div className="absolute inset-0 flex items-center justify-center
+           bg-black bg-opacity-60 z-10 text-white text-lg">
+            Loading trailer...
+          </div>
+        )}
+        <ReactPlayer
+          url={getEmbedUrl(currentTrailer.videoUrl)}
+          controls
+          playing
+          muted
+          width="100%"
+          height="100%"
+          onReady={() => setIsLoading(false)}
+        />
+      </div>
+
+      {/* === Trailer Thumbnails === */}
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4
+       gap-4 mt-8 max-w-3xl mx-auto">
+>>>>>>> e9b758d14a48b25a33e2de7fd487c8e6468c4804
         {dummyTrailers.map((trailer, index) => (
           <button
             key={index}
@@ -64,7 +89,12 @@ export default function TrailersSection() {
                 setCurrentTrailer(trailer);
               }
             }}
+<<<<<<< HEAD
             className={`relative group rounded-lg overflow-hidden border-2 transition focus:outline-none focus:ring-2 focus:ring-white ${
+=======
+            className={`relative group rounded-lg overflow-hidden border-2
+               transition focus:outline-none focus:ring-2 focus:ring-white ${
+>>>>>>> e9b758d14a48b25a33e2de7fd487c8e6468c4804
               trailer.videoUrl === currentTrailer.videoUrl
                 ? "border-white"
                 : "border-transparent"
@@ -74,10 +104,19 @@ export default function TrailersSection() {
             <img
               src={trailer.image}
               alt={`Trailer ${index + 1}`}
+<<<<<<< HEAD
               className="w-full h-full object-cover brightness-75 group-hover:brightness-90"
             />
             <PlayCircleIcon
               className="absolute inset-0 m-auto w-10 h-10 text-white opacity-80 group-hover:opacity-100 transition"
+=======
+              className="w-full h-full object-cover brightness-75
+               group-hover:brightness-90"
+            />
+            <PlayCircleIcon
+              className="absolute inset-0 m-auto w-10 h-10 text-white 
+              opacity-80 group-hover:opacity-100 transition"
+>>>>>>> e9b758d14a48b25a33e2de7fd487c8e6468c4804
               strokeWidth={1.6}
             />
           </button>

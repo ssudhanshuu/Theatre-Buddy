@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useEffect, useState } from "react";
 
 import Title from "./Title";
@@ -278,3 +279,16 @@ export default function AddShow() {
     </div>
   );
 }
+=======
+import React from 'react';
+import AdminSidebar from './AdminSidebar';
+
+export default function Addshow() {
+  return (
+    <div className=" flex h-screen">
+      <AdminSidebar />
+      <div className="p-4 ml-20 w-[100%] ">Add show</div>
+    </div>
+  );
+}
+>>>>>>> e9b758d14a48b25a33e2de7fd487c8e6468c4804
